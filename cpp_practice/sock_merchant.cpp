@@ -1,7 +1,5 @@
 #include <bits/stdc++.h>
 
-using namespace std;
-
 std::vector<string> split_string(string);
 
 // Complete the sockMerchant function below.
@@ -14,8 +12,8 @@ int sockMerchant(int n, std::vector<int> ar) {
 
     int matching_socks = 0;
     for(int i=0; i<ar.size(); ++i){
-        cout << i << endl;
-        cout << ar[i] << endl;
+        std::cout << i << std::endl;
+        std::cout << ar[i] << std::endl;
         if (ar[i] == ar[i+1]){
             matching_socks++;
             if(ar[i] == ar[i+2]){
